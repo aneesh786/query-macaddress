@@ -11,7 +11,6 @@ import requests
 import sys
 macaddress=sys.argv[1]
 token=sys.argv[2]
-print(macaddress)
 url = 'https://api.macaddress.io/v1?apiKey=%s&output=json&search=%s' % (token, macaddress)
 s = requests.get(url)
 r = s.json()
